@@ -3,6 +3,12 @@ header {
     display: flex;
     align-items: center;
     text-align: center;
+    border: 5px solid gold;
+    border-radius: 0 0 20px 20px;
+    outline: 3px solid black;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 header h1 {

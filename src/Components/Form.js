@@ -9,7 +9,8 @@ export default function Form() {
             email: "",
             password: "",
             confirm: "",
-            newsletter: false,
+            comment: "",
+            newsletter: false
         }
     )
 
@@ -25,6 +26,10 @@ export default function Form() {
 
     function handleSubmit(event) {
         event.preventDefault();
+        validateInput();
+    }
+
+    function validateInput() {
         if(formData.password === formData.confirm) {
             console.log(formData);
             alert("Data successfully sent!");
@@ -73,6 +78,15 @@ export default function Form() {
                 placeholder='Confirm Password'
                 value={formData.confirm}
                 onChange={handleChange}
+            />
+
+            <textarea 
+                name='comment'
+                placeholder='Leave your comment here(400char max)'
+                value={formData.comment}
+                onChange={handleChange}
+                rows='8'
+                maxLength='400'
             />
 
             <label htmlFor='newsletter'>Subscribe to our newsletter?</label>

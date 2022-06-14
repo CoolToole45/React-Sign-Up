@@ -4,3 +4,20 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+.App {
+  background-color: rgb(57, 189, 212);
+}
+
+.main-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: antiquewhite;
+  background-image: url(./Img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: 0 0 30px 15px rgb(0, 119, 255);
+}

@@ -1,7 +1,7 @@
 #main-form {
     max-width: 400px;
     width: 100%;
-    margin: 0 auto;
+    margin: 1.2rem auto 0;
     text-align: center;
 }
 
@@ -9,12 +9,17 @@
     margin: 1rem 0;
 }
 
-#main-form input {
+#main-form input,
+#main-form textarea {
     font-size: 1rem;
     padding: 1rem;
     border: 5px solid gold;
     outline: 2px solid;
     border-radius: 10px;
+}
+
+#main-form textarea {
+    resize: none;
 }
 
 #main-form input[type='checkbox'] {
